@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Каталог</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="logo">SportStyle</div>
+  <nav>
+    <a href="index.html">Головна</a>
+    <a href="catalog.html">Каталог</a>
+    <a href="about.html">Про нас</a>
+    <a href="contact.html">Контакти</a>
+    <div class="burger" onclick="toggleMenu()">☰</div>
+  </nav>
+</header>
+
+<main>
+<h2>Оберіть категорію</h2>
+<div class="cards">
+  <a href="men.html" class="card">
+    <img src="https://i.imgur.com/riS2v4l.jpeg" alt="Чоловічий одяг">
+    <h3>Чоловічий одяг</h3>
+  </a>
+  <a href="women.html" class="card">
+    <img src="https://i.imgur.com/aQ9oyCO.jpeg" alt="Жіночий одяг">
+    <h3>Жіночий одяг</h3>
+  </a>
+</div>
+</main>
+
+<footer>
+  <p>© 2025 SportStyle | sportstyle@gmail.com | +380 97 000 00 00</p>
+</footer>
+
+<script>
+function toggleMenu(){
+  const nav = document.querySelector('header nav');
+  nav.classList.toggle('open');
+}
+</script>
+
+</body>
+</html>
