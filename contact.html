@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Контакти</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="logo">SportStyle</div>
+  <nav>
+    <a href="index.html">Головна</a>
+    <a href="catalog.html">Каталог</a>
+    <a href="about.html">Про нас</a>
+    <a href="contact.html">Контакти</a>
+    <div class="burger" onclick="toggleMenu()">☰</div>
+  </nav>
+</header>
+
+<main>
+<h2>Контакти</h2>
+<p>Email: sportstyle@gmail.com</p>
+<p>Телефон: +380 97 000 00 00</p>
+<p>Адреса: Київ, вул. Спортивна 12</p>
+</main>
+
+<footer>
+  <p>© 2025 SportStyle | sportstyle@gmail.com | +380 97 000 00 00</p>
+</footer>
+
+<script>
+function toggleMenu(){
+  const nav = document.querySelector('header nav');
+  nav.classList.toggle('open');
+}
+</script>
+
+</body>
+</html>
